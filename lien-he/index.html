@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ Vietnam Legal Services</title>
+  <meta name="description" content="Liên hệ với mạng lưới luật sư chuyên nghiệp để được tư vấn pháp lý miễn phí, giải quyết tranh chấp." />
+  <script type="module" src="/main.js"></script>
+</head>
+<body>
+  <site-header></site-header>
+
+  <main style="padding-top: var(--nav-height);">
+    <section class="section">
+      <div class="container">
+        <h1 class="text-center animate-on-scroll">Liên Hệ Với Chúng Tôi</h1>
+        
+        <div class="grid" style="margin-top: 60px;">
+          <div class="animate-on-scroll">
+            <h3>Thông Tin Liên Hệ</h3>
+            <p style="margin: 20px 0;">Chúng tôi luôn sẵn sàng lắng nghe và giải quyết vấn đề pháp lý của bạn một cách bảo mật và nhanh chóng nhất.</p>
+            
+            <div style="margin-bottom: 20px;">
+              <strong class="text-gold">Hotline:</strong><br>
+              <span style="font-size: 1.2rem;">[PLACEHOLDER: Hotline]</span>
+            </div>
+            <div style="margin-bottom: 20px;">
+              <strong class="text-gold">Zalo Hỗ Trợ:</strong><br>
+              <a href="#" class="btn btn-outline" style="margin-top: 10px;">Chat Qua Zalo OA</a>
+            </div>
+          </div>
+          
+          <div class="card animate-on-scroll">
+            <h3 class="text-navy" style="margin-bottom: 20px;">Gửi Yêu Cầu Tư Vấn</h3>
+            <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Yêu cầu đã được ghi nhận.');">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Họ và tên" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Số điện thoại" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Nội dung tư vấn..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Yêu Cầu Miễn Phí</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+  <chat-widget></chat-widget>
+</body>
+</html>

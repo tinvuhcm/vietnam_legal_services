@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trang chủ - Vietnam Legal Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#3f465c",
+                      "tertiary-container": "#cba72f",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#bec6e0",
+                      "on-primary-fixed": "#131b2e",
+                      "background": "#f7f9fb",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "secondary-fixed-dim": "#bcc7de",
+                      "hover-gold": "#F1C40F",
+                      "on-primary-container": "#7c839b",
+                      "primary": "#000000",
+                      "tertiary-fixed": "#ffe088",
+                      "error-container": "#ffdad6",
+                      "inverse-surface": "#2d3133",
+                      "surface-tint": "#565e74",
+                      "on-secondary-fixed": "#111c2d",
+                      "on-secondary-container": "#586377",
+                      "on-tertiary-container": "#4e3d00",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#f7f9fb",
+                      "secondary": "#545f73",
+                      "surface-bright": "#f7f9fb",
+                      "primary-fixed": "#dae2fd",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-surface": "#191c1e",
+                      "on-tertiary": "#ffffff",
+                      "surface-variant": "#e0e3e5",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#735c00",
+                      "surface-dim": "#d8dadc",
+                      "on-background": "#191c1e",
+                      "surface-container-low": "#f2f4f6",
+                      "primary-container": "#131b2e",
+                      "on-surface-variant": "#45464d",
+                      "on-tertiary-fixed": "#241a00",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#3c475a",
+                      "surface-container": "#eceef0",
+                      "surface-white": "#FFFFFF",
+                      "primary-fixed-dim": "#bec6e0",
+                      "secondary-fixed": "#d8e3fb",
+                      "surface-container-high": "#e6e8ea",
+                      "outline": "#76777d",
+                      "secondary-container": "#d5e0f8",
+                      "outline-variant": "#c6c6cd",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "1.5rem",
+                      "section-padding-desktop": "5rem",
+                      "stack-lg": "2rem",
+                      "stack-md": "1rem",
+                      "container-max": "1280px",
+                      "stack-sm": "0.5rem",
+                      "section-padding-mobile": "2.5rem"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "button": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "button": [
+                              "16px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-primary-container/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm transition-transform duration-200">
+<div class="flex justify-between items-center px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold text-tertiary-container">
+                VLS Vietnam Legal Services
+            </div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex items-center gap-stack-lg">
+<li><a class="font-label-caps text-label-caps text-tertiary-container font-bold border-b-2 border-tertiary-container pb-1 hover:text-hover-gold transition-all duration-300" href="#">Trang chủ</a></li>
+<li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300" href="#">Về chúng tôi</a></li>
+<li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300" href="#">Pháp chế Doanh nghiệp</a></li>
+<li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300" href="#">Tranh chấp Tố tụng</a></li>
+<li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300" href="#">Kiến thức Pháp lý</a></li>
+<li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300" href="#">Liên hệ</a></li>
+</ul>
+<button class="hidden md:inline-flex items-center justify-center bg-tertiary-container text-primary-container font-button text-button rounded-md px-6 py-3 min-h-[48px] hover:bg-hover-gold transition-colors">
+                Tư vấn ngay
+            </button>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative bg-surface-container-low overflow-hidden pt-12 pb-section-padding-desktop md:pt-24 min-h-[819px] flex items-center">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-20" data-alt="A highly professional and modern law firm office interior. Natural daylight streams through large glass windows, illuminating a sleek conference table and bookshelves lined with legal texts. The color palette is composed of crisp whites, deep navy blues, and subtle gold accents. The atmosphere conveys trust, authority, and corporate elegance, establishing a premier legal environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPtXncimDPgBbU8otD7pActxrLTr3syXLWsQdiQY-l4ZTTVBnfacktOGZoHMhvHiyHuc5oaaLyHtUbf_12s3-_9nS9-EvVF0gM-ZMn38AA9u4H-9qP3q_PF2baJegVgDrxfykugTvHe9w-QfwE5ged2oA5-MpS0r2r4lfuJvjFSklMmgTGvv3KClHztJy_KIHRVqEVpwk3tZLxjFrbcW1dVeOgCvqO86QPjMd85hXQPsnn9fdp44vfauKdnsTiUlDLMTfT2Zy1hQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="fade-in-up space-y-stack-md">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+                    Công Ty Luật <span class="text-tertiary-container">Uy Tín</span> &amp; Chuyên Nghiệp - Dịch Vụ Pháp Lý Toàn Diện
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Giải pháp pháp lý nhanh chóng, an toàn cho doanh nghiệp và cá nhân. Luật sư giàu kinh nghiệm, tư vấn tận tâm.
+                </p>
+<div class="pt-stack-sm flex flex-wrap gap-4">
+<button class="inline-flex items-center justify-center bg-tertiary-container text-primary-container font-button text-button rounded-md px-8 py-4 min-h-[48px] hover:bg-hover-gold transition-colors shadow-sm">
+                        Tư vấn ngay
+                    </button>
+<button class="inline-flex items-center justify-center bg-transparent border-2 border-primary-container text-primary-container font-button text-button rounded-md px-8 py-4 min-h-[48px] hover:bg-primary-container hover:text-white transition-colors">
+                        Tìm hiểu thêm
+                    </button>
+</div>
+</div>
+<div class="hidden lg:block fade-in-up" style="transition-delay: 0.2s;">
+<div class="relative rounded-xl overflow-hidden shadow-lg border border-outline-variant/30">
+<img class="w-full h-auto object-cover aspect-[4/3]" data-alt="A professional portrait of a senior lawyer in a sharply tailored navy blue suit standing confidently in a modern, well-lit law office. The lighting is bright and soft, emphasizing trustworthiness and expertise. The background features subtle architectural details and a hint of a city skyline through a large window, conveying an elite, authoritative corporate tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXHgfNC2eTGWy5YOi6Us52cCWJQAQmUxaSWwLMHXF3SBts5AAhcdlz7Mr3isOyxpR5r8Eb0gvP1qQ_QrCWEsledirA-qn-uwaTinD525nig8MFEGEy-4Rx5uvFJkqRjNTQrS-RkIODXYNNsNwP3uVvnjZGF1Ssq0zlEZnclcP2IKnzxS3QsawCZIo1lrbIVYQ33386wNM2B7azSaLADRM-PUTYNGczu2v7uY0FYAouUgB-WMCBzPinV4jml9HEFu7ut6KooQ3bQQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Elements -->
+<section class="bg-surface-white py-12 border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center fade-in-up">
+<div>
+<div class="font-headline-md text-headline-md text-tertiary-container">500+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-2">Vụ việc thành công</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-tertiary-container">15+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-2">Năm kinh nghiệm</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-tertiary-container">50+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-2">Luật sư &amp; Chuyên gia</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-tertiary-container">98%</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-2">Khách hàng hài lòng</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Services (Bento Grid) -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-background">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 fade-in-up">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Lĩnh Vực Hành Nghề</h2>
+<div class="w-24 h-1 bg-tertiary-container mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+<!-- Service 1: Large -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-white rounded-xl p-8 border border-outline-variant/30 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all group fade-in-up relative overflow-hidden flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="A close-up abstract view of corporate legal documents being signed with an elegant fountain pen. The setting is a polished mahogany desk in a brightly lit executive office. Subtle gold accents and crisp white paper create a high-contrast, premium aesthetic. The mood is serious, binding, and professional, reflecting high-stakes corporate compliance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDLnPV9ULD6aTiWtDGTUyW2nCUvX19ev65wKBeE2hYaynEyQ0MZEDetO6OqhpOFhBTo42C3rjYAKdPVBgOzSPRxkQxkJQBKave97E-mJAkb6-uY7VJGfH4I_vbpMU04Nb0rBIW0YQmiAShi_PSGr3R_UHhFSZXy00CT4OoHMP41siVSAwcPW-XkCWCumG1RienkjV9WsZJX_vShrRmGpvj4uDZ2fwz2wE_JS79JhgxnSc4LyEXCwTtDQo6KCygLjJbqhPtIy-3B6w')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+</div>
+<div class="relative z-10 text-white">
+<div class="w-12 h-12 bg-tertiary-container rounded-md flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="corporate_fare">corporate_fare</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Pháp chế doanh nghiệp</h3>
+<p class="font-body-md text-body-md text-surface-variant max-w-md">Tư vấn thường xuyên, tuân thủ pháp luật, M&amp;A, và tái cấu trúc doanh nghiệp với sự bảo vệ pháp lý toàn diện.</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-white rounded-xl p-6 border border-outline-variant/30 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all group fade-in-up flex flex-col">
+<div class="w-10 h-10 bg-surface-container-high rounded-md flex items-center justify-center mb-4 text-tertiary-container group-hover:bg-tertiary-container group-hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-2 text-on-surface">Tranh chấp &amp; Tố tụng</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Đại diện giải quyết các tranh chấp thương mại, dân sự, lao động tại Tòa án và Trọng tài.</p>
+<a class="inline-flex items-center text-tertiary-container font-label-caps text-label-caps mt-4 group-hover:text-hover-gold" href="#">
+                        Chi tiết <span class="material-symbols-outlined ml-1 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-white rounded-xl p-6 border border-outline-variant/30 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all group fade-in-up flex flex-col" style="transition-delay: 0.1s;">
+<div class="w-10 h-10 bg-surface-container-high rounded-md flex items-center justify-center mb-4 text-tertiary-container group-hover:bg-tertiary-container group-hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="contract">contract</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-2 text-on-surface">Tư vấn hợp đồng</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Soạn thảo, rà soát và đàm phán các loại hợp đồng kinh tế, thương mại, dân sự chặt chẽ.</p>
+<a class="inline-flex items-center text-tertiary-container font-label-caps text-label-caps mt-4 group-hover:text-hover-gold" href="#">
+                        Chi tiết <span class="material-symbols-outlined ml-1 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-white rounded-xl p-6 border border-outline-variant/30 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all group fade-in-up flex flex-col" style="transition-delay: 0.2s;">
+<div class="w-10 h-10 bg-surface-container-high rounded-md flex items-center justify-center mb-4 text-tertiary-container group-hover:bg-tertiary-container group-hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="family_home">family_home</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-2 text-on-surface">Luật gia đình</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Tư vấn hôn nhân gia đình, ly hôn, quyền nuôi con và phân chia tài sản với sự tinh tế.</p>
+<a class="inline-flex items-center text-tertiary-container font-label-caps text-label-caps mt-4 group-hover:text-hover-gold" href="#">
+                        Chi tiết <span class="material-symbols-outlined ml-1 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Brief -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-white border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="fade-in-up">
+<img class="rounded-xl shadow-lg border border-outline-variant/30 w-full h-auto object-cover aspect-[4/3]" data-alt="A diverse team of top-tier legal professionals standing together in a bright, modern corporate boardroom. They are dressed in formal business attire, projecting confidence, authority, and approachability. The room features clean lines, glass walls, and a neutral color palette of navy, white, and subtle gold, reinforcing a trustworthy, elite corporate brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWzPDpS9jcHqtMYAUJMo6yraC4k2HOAgIkISHDJ18ide4jbEORhnMmFoufx8YdnikTMnPdENIEpaLTIdK8eHcbZ3SL1SQnIwnRuDu8U6paFW7MMVVj9h28QH92KAji4zq4dx-2nizLe_kntQy4ynfb4SQbMkvg7kAI4ViIApNk0NvNZosHTMD7nUsb7EUDmEbqrES1Y6tgXkg3tbAp6kfnEaJD_9F98LhFYlosyKqsSBrY_B8g5lDFjVU0NWymde6tHR7GmEGDIA"/>
+</div>
+<div class="space-y-6 fade-in-up" style="transition-delay: 0.2s;">
+<div class="font-label-caps text-label-caps text-tertiary-container uppercase tracking-wider">Về Chúng Tôi</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Cam kết bảo vệ quyền lợi hợp pháp tối đa cho khách hàng</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Vietnam Legal Services (VLS) được thành lập với sứ mệnh cung cấp dịch vụ pháp lý chuyên nghiệp, minh bạch và hiệu quả. Đội ngũ luật sư của chúng tôi không chỉ am hiểu sâu sắc luật pháp trong nước mà còn nắm bắt tiêu chuẩn quốc tế.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Chúng tôi đồng hành cùng khách hàng vượt qua mọi rào cản pháp lý, tối ưu hóa rủi ro và xây dựng nền tảng vững chắc cho sự phát triển bền vững.
+                </p>
+<div class="pt-4">
+<button class="inline-flex items-center justify-center bg-transparent border-2 border-tertiary-container text-tertiary-container font-button text-button rounded-md px-6 py-3 min-h-[48px] hover:bg-tertiary-container hover:text-primary-container transition-colors">
+                        Đội ngũ Luật sư
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-black w-full text-on-primary-fixed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-gutter py-section-padding-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2 space-y-4">
+<div class="font-headline-md text-headline-md text-tertiary-fixed font-bold">
+                    VLS
+                </div>
+<p class="font-body-md text-body-md text-on-primary-container max-w-md">
+                    Đối tác pháp lý tin cậy của bạn. Chúng tôi cung cấp các giải pháp an toàn, hiệu quả cho mọi vấn đề pháp lý.
+                </p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-tertiary-fixed mb-4">Liên kết</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Lawyer network</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Services</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Discovery</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Contact &amp; Social</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-tertiary-fixed mb-4">Liên hệ</h4>
+<ul class="space-y-2">
+<li class="font-body-md text-body-md text-on-primary-container flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span>
+                        Hà Nội, Việt Nam
+                    </li>
+<li class="font-body-md text-body-md text-on-primary-container flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="mail">mail</span>
+                        contact@vls.vn
+                    </li>
+<li class="font-body-md text-body-md text-on-primary-container flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
+                        1900 xxxx
+                    </li>
+</ul>
+</div>
+</div>
+<div class="border-t border-on-primary-container/20 px-gutter py-6">
+<div class="max-w-container-max mx-auto font-body-md text-body-md text-on-primary-container text-sm text-center md:text-left">
+                © 2026 Vietnam Legal Services. All rights reserved.
+            </div>
+</div>
+</footer>
+<!-- SideNavBar (Zalo Widget) -->
+<a aria-label="VLS Support - Chat with us" class="bg-primary-container fixed bottom-6 right-6 rounded-full w-14 h-14 border-2 border-tertiary-container shadow-lg flex items-center justify-center z-50 bg-tertiary-container text-primary-container hover:scale-110 hover:bg-hover-gold transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+<script>
+        // Fade in animation observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body></html>

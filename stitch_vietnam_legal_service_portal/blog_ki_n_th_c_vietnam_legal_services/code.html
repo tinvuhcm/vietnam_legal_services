@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog Pháp Lý 2026 - Kiến Thức &amp; Tin Tức Pháp Luật | VLS</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Micro-interaction: Fade In Up */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#3f465c",
+                        "tertiary-container": "#cba72f",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#bec6e0",
+                        "on-primary-fixed": "#131b2e",
+                        "background": "#f7f9fb",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "hover-gold": "#F1C40F",
+                        "on-primary-container": "#7c839b",
+                        "primary": "#000000",
+                        "tertiary-fixed": "#ffe088",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2d3133",
+                        "surface-tint": "#565e74",
+                        "on-secondary-fixed": "#111c2d",
+                        "on-secondary-container": "#586377",
+                        "on-tertiary-container": "#4e3d00",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "secondary": "#545f73",
+                        "surface-bright": "#f7f9fb",
+                        "primary-fixed": "#dae2fd",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-surface": "#191c1e",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#735c00",
+                        "surface-dim": "#d8dadc",
+                        "on-background": "#191c1e",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-container": "#131b2e",
+                        "on-surface-variant": "#45464d",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-container": "#eceef0",
+                        "surface-white": "#FFFFFF",
+                        "primary-fixed-dim": "#bec6e0",
+                        "secondary-fixed": "#d8e3fb",
+                        "surface-container-high": "#e6e8ea",
+                        "outline": "#76777d",
+                        "secondary-container": "#d5e0f8",
+                        "outline-variant": "#c6c6cd",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "1.5rem",
+                        "section-padding-desktop": "5rem",
+                        "stack-lg": "2rem",
+                        "stack-md": "1rem",
+                        "container-max": "1280px",
+                        "stack-sm": "0.5rem",
+                        "section-padding-mobile": "2.5rem"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Playfair Display"],
+                        "button": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "button": ["16px", { "lineHeight": "1", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-primary-container/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm flex justify-between items-center px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold text-tertiary-container">
+            VLS Vietnam Legal Services
+        </div>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300 font-label-caps text-label-caps" href="#">Trang chủ</a>
+<a class="text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300 font-label-caps text-label-caps" href="#">Về chúng tôi</a>
+<a class="text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300 font-label-caps text-label-caps" href="#">Pháp chế Doanh nghiệp</a>
+<a class="text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300 font-label-caps text-label-caps" href="#">Tranh chấp Tố tụng</a>
+<a class="text-tertiary-container font-bold border-b-2 border-tertiary-container pb-1 font-label-caps text-label-caps hover:text-hover-gold transition-all duration-300 scale-95 transition-transform duration-200" href="#">Kiến thức Pháp lý</a>
+<a class="text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-300 font-label-caps text-label-caps" href="#">Liên hệ</a>
+</div>
+<button class="hidden md:block bg-tertiary-container text-primary-container font-button text-button px-6 py-3 rounded-md hover:bg-hover-gold transition-colors duration-300">
+            Tư vấn ngay
+        </button>
+<!-- Mobile Menu Icon (Simplified for structure) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+<!-- Main Content Wrapper -->
+<main class="pt-24 pb-section-padding-desktop">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter py-12 md:py-20 text-center reveal-up">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary-container mb-stack-sm">
+                Blog Pháp Lý 2026
+            </h1>
+<p class="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-2xl mx-auto">
+                Kiến Thức &amp; Tin Tức Pháp Luật chuyên sâu, được biên soạn bởi đội ngũ luật sư hàng đầu dành cho doanh nghiệp và cá nhân.
+            </p>
+<!-- Global Search -->
+<div class="max-w-xl mx-auto relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-tertiary-container transition-colors" data-icon="search">search</span>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-white border border-outline-variant/50 rounded-xl font-body-md focus:outline-none focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container shadow-sm transition-all" placeholder="Tìm kiếm bài viết, chủ đề, bộ luật..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary-container text-on-primary px-4 py-2 rounded-lg font-button text-sm hover:bg-secondary transition-colors">
+                    Tìm kiếm
+                </button>
+</div>
+</section>
+<!-- Hub Layout -->
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-stack-lg">
+<!-- Sidebar (Categories & Filters) -->
+<aside class="lg:col-span-3 space-y-stack-lg reveal-up">
+<!-- Categories -->
+<div class="bg-surface-white border border-outline-variant/30 rounded-xl p-6 shadow-sm">
+<h3 class="font-label-caps text-label-caps text-primary-container border-b border-outline-variant/30 pb-3 mb-4">Danh Mục Tin</h3>
+<ul class="space-y-3 font-body-md text-secondary">
+<li><a class="flex justify-between items-center hover:text-tertiary-container transition-colors group" href="#"><span class="font-semibold text-primary-container">Doanh nghiệp (B2B)</span> <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span></a></li>
+<li><a class="flex justify-between items-center hover:text-tertiary-container transition-colors group" href="#"><span>Cá nhân (B2C)</span> <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span></a></li>
+<li><a class="flex justify-between items-center hover:text-tertiary-container transition-colors group" href="#"><span>Tin tức Pháp luật</span> <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span></a></li>
+<li><a class="flex justify-between items-center hover:text-tertiary-container transition-colors group" href="#"><span>Án lệ nổi bật</span> <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span></a></li>
+</ul>
+</div>
+<!-- Trending Tags -->
+<div class="bg-surface-white border border-outline-variant/30 rounded-xl p-6 shadow-sm">
+<h3 class="font-label-caps text-label-caps text-primary-container border-b border-outline-variant/30 pb-3 mb-4">Từ khóa phổ biến</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-low border border-outline-variant/30 rounded-md text-sm font-body-md text-secondary hover:bg-tertiary-container/10 hover:text-tertiary-container cursor-pointer transition-colors">Tuân thủ</span>
+<span class="px-3 py-1 bg-surface-container-low border border-outline-variant/30 rounded-md text-sm font-body-md text-secondary hover:bg-tertiary-container/10 hover:text-tertiary-container cursor-pointer transition-colors">Ly hôn</span>
+<span class="px-3 py-1 bg-surface-container-low border border-outline-variant/30 rounded-md text-sm font-body-md text-secondary hover:bg-tertiary-container/10 hover:text-tertiary-container cursor-pointer transition-colors">Hợp đồng</span>
+<span class="px-3 py-1 bg-surface-container-low border border-outline-variant/30 rounded-md text-sm font-body-md text-secondary hover:bg-tertiary-container/10 hover:text-tertiary-container cursor-pointer transition-colors">Lao động</span>
+<span class="px-3 py-1 bg-surface-container-low border border-outline-variant/30 rounded-md text-sm font-body-md text-secondary hover:bg-tertiary-container/10 hover:text-tertiary-container cursor-pointer transition-colors">Thừa kế</span>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="lg:col-span-9 space-y-section-padding-mobile">
+<!-- B2B Section (Bento Layout) -->
+<section class="reveal-up">
+<div class="flex justify-between items-end mb-stack-md border-b border-outline-variant/30 pb-4">
+<h2 class="font-headline-md text-headline-md text-primary-container flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container" data-icon="domain">domain</span>
+                            Blog Doanh nghiệp (B2B)
+                        </h2>
+<a class="font-label-caps text-label-caps text-tertiary-container hover:text-hover-gold transition-colors flex items-center gap-1" href="#">Xem tất cả <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Featured B2B Card -->
+<article class="bg-surface-white border border-outline-variant/30 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col h-full">
+<div class="h-48 w-full bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A highly professional photograph of a modern, upscale corporate boardroom with floor-to-ceiling windows overlooking a city skyline. The lighting is bright and clear, conveying a sense of corporate transparency and high-level strategy. A beautifully bound legal document rests on a polished wooden table. The aesthetic relies on crisp whites, subtle navy blues, and hints of gold, aligning perfectly with a premium light-mode corporate design language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB55G9EptkSlFKgb8q5QNRM_Z9XrkUwGyYcnEvlH51hLuI8gkC0BHuZn2enHB8neMC3aUqqLQa2rdtqFmAmaKB92KVbP5e0YAa6WkpoztRpirAtnYbY7LHsGxJboE-5fFLuKoc_ypEjzCgrSQVtjjBfOz3r3up39K9d5bBOfkivmEk_3W2lpTCSzNzqzB8K_QsCLByR-Y_yEeEs5aK6xSk7i8hfBQtdyq7_uvA8iST8tQ_F3FwjMKgz2lB8HsH6q69xKUt2k5HJvQ"/>
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary px-2 py-1 rounded font-label-caps text-xs">Tuân thủ pháp chế</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-[24px] font-semibold text-primary-container leading-tight mb-3 group-hover:text-tertiary-container transition-colors">Hướng Dẫn Xây Dựng Khung Tuân Thủ Pháp Chế Cho C-Level Năm 2026</h3>
+<p class="font-body-md text-secondary mb-4 line-clamp-3">Phân tích chuyên sâu về các quy định mới nhất ảnh hưởng đến cấu trúc doanh nghiệp và cách các nhà lãnh đạo có thể giảm thiểu rủi ro hệ thống.</p>
+<div class="mt-auto flex items-center text-sm font-body-md text-outline">
+<span class="material-symbols-outlined text-[16px] mr-1" data-icon="calendar_today">calendar_today</span> 12/05/2026
+                                </div>
+</div>
+</article>
+<!-- Secondary B2B Cards List -->
+<div class="flex flex-col gap-4">
+<!-- List Item 1 -->
+<article class="bg-surface-white border border-outline-variant/30 rounded-xl p-4 shadow-sm hover:border-tertiary-container/50 hover:bg-surface-container-lowest transition-all group flex gap-4 items-center">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A close-up shot of a sophisticated fountain pen resting on a crisp, typed legal contract. The scene is illuminated by soft, natural studio lighting, highlighting the texture of the premium paper and the metallic sheen of the pen. The color palette features elegant grays, pristine whites, and deep corporate blue accents. The mood is precise, authoritative, and securely professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmTjKSYWaOf5st0e0idA88vZ7EieAY1ndwLbs62dSB-KjljW2kE9ZN0ZpSTJl2QiooKepmU0QijThBNzDt5j5MivYyVITNQGLuZK-PaLtfi3LLdRuWKNGnScRjvsEu4KolDi0_O_6wUMkfd1GfSniRQWOPYu9ewSOFa1W-HqtlGpiFlyGqHczjk_P8Ej__WMQeqADRSSGT8nw_5hU4O9iZ6KlexGD9ikmzSwFMvxDI5Sfs1zEMzOatj5W9fzGgXMgAWwQvhY9_ZQ"/>
+</div>
+<div>
+<span class="font-label-caps text-[12px] text-tertiary-container mb-1 block">Soạn thảo hợp đồng</span>
+<h4 class="font-body-md font-semibold text-primary-container leading-tight group-hover:text-tertiary-container transition-colors line-clamp-2">5 Cạm Bẫy Trong Hợp Đồng Thương Mại Quốc Tế Cần Tránh</h4>
+</div>
+</article>
+<!-- List Item 2 -->
+<article class="bg-surface-white border border-outline-variant/30 rounded-xl p-4 shadow-sm hover:border-tertiary-container/50 hover:bg-surface-container-lowest transition-all group flex gap-4 items-center">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-gradient-to-br from-primary-container to-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="warning">warning</span>
+</div>
+</div>
+<div>
+<span class="font-label-caps text-[12px] text-tertiary-container mb-1 block">Rủi ro hợp đồng</span>
+<h4 class="font-body-md font-semibold text-primary-container leading-tight group-hover:text-tertiary-container transition-colors line-clamp-2">Quản Trị Rủi Ro Chuỗi Cung Ứng Dưới Góc Độ Pháp Lý</h4>
+</div>
+</article>
+<!-- List Item 3 -->
+<article class="bg-surface-white border border-outline-variant/30 rounded-xl p-4 shadow-sm hover:border-tertiary-container/50 hover:bg-surface-container-lowest transition-all group flex gap-4 items-center">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A well-lit, contemporary office space focusing on two professionals engaged in a serious but constructive conversation across a sleek white desk. The lighting is bright and inviting, creating a modern corporate atmosphere. The color scheme relies on neutral tones with navy blue and soft gold accents, reflecting a balanced, elite light-mode aesthetic suitable for a labor law context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4_vx70aWigkIXGwYrWcNhjHlSIfoRfAN5CCq9Cy7PgQ7vaUgRqja931s7JpC_FnlOCMkY10nRnRnwIoA4pGpDSP3iLbCB15xjJKbeAsDgJYXR8qcNcjM-KDO6cCfghdvUQEl9eS0CnQtwcfb3okeaPBPQUrR1ZzJMeopZ7R8oYmpZ87eu6miwxfZ0ILy4Cc5mwmY5g22Y80jxgY8WiwMJ5EFfW0cx9lff9MNRFVJMc-7C_JFAAffqnyTNG7oT5vYj1HzA4mGM-w"/>
+</div>
+<div>
+<span class="font-label-caps text-[12px] text-tertiary-container mb-1 block">Lao động</span>
+<h4 class="font-body-md font-semibold text-primary-container leading-tight group-hover:text-tertiary-container transition-colors line-clamp-2">Cập Nhật Luật Lao Động: Quy Trình Kỷ Luật Đúng Chuẩn</h4>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- B2C Section (Grid Layout) -->
+<section class="reveal-up delay-200">
+<div class="flex justify-between items-end mb-stack-md border-b border-outline-variant/30 pb-4">
+<h2 class="font-headline-md text-headline-md text-primary-container flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container" data-icon="person">person</span>
+                            Blog Cá nhân (B2C)
+                        </h2>
+<a class="font-label-caps text-label-caps text-tertiary-container hover:text-hover-gold transition-colors flex items-center gap-1" href="#">Xem tất cả <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- B2C Card 1 -->
+<article class="bg-surface-white border border-outline-variant/30 rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="family_restroom">family_restroom</span>
+</div>
+<span class="font-label-caps text-[12px] px-2 py-1 bg-surface-container-low text-secondary rounded">Ly hôn</span>
+</div>
+<h3 class="font-headline-md text-[20px] font-semibold text-primary-container mb-2 group-hover:text-tertiary-container transition-colors">Thủ Tục Ly Hôn Đơn Phương: Hồ Sơ Và Trình Tự Mới Nhất</h3>
+<p class="font-body-md text-secondary text-sm mb-4 flex-grow line-clamp-2">Hướng dẫn chi tiết từng bước bảo vệ quyền lợi hợp pháp khi tiến hành thủ tục ly hôn không đồng thuận.</p>
+<a class="text-tertiary-container font-button text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="#">Đọc tiếp <span class="material-symbols-outlined text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span></a>
+</article>
+<!-- B2C Card 2 -->
+<article class="bg-surface-white border border-outline-variant/30 rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+</div>
+<span class="font-label-caps text-[12px] px-2 py-1 bg-surface-container-low text-secondary rounded">Thừa kế</span>
+</div>
+<h3 class="font-headline-md text-[20px] font-semibold text-primary-container mb-2 group-hover:text-tertiary-container transition-colors">Chia Di Sản Thừa Kế Không Có Di Chúc: Quy Định Cần Biết</h3>
+<p class="font-body-md text-secondary text-sm mb-4 flex-grow line-clamp-2">Giải đáp các vướng mắc phổ biến về hàng thừa kế và cách giải quyết tranh chấp tài sản nội bộ gia đình.</p>
+<a class="text-tertiary-container font-button text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="#">Đọc tiếp <span class="material-symbols-outlined text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span></a>
+</article>
+<!-- B2C Card 3 -->
+<article class="bg-surface-white border border-outline-variant/30 rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+</div>
+<span class="font-label-caps text-[12px] px-2 py-1 bg-surface-container-low text-secondary rounded">Đòi nợ</span>
+</div>
+<h3 class="font-headline-md text-[20px] font-semibold text-primary-container mb-2 group-hover:text-tertiary-container transition-colors">Giải Pháp Thu Hồi Nợ Cá Nhân Hợp Pháp &amp; Hiệu Quả</h3>
+<p class="font-body-md text-secondary text-sm mb-4 flex-grow line-clamp-2">Các biện pháp pháp lý mạnh mẽ để buộc con nợ thực hiện nghĩa vụ thanh toán mà không vi phạm pháp luật.</p>
+<a class="text-tertiary-container font-button text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="#">Đọc tiếp <span class="material-symbols-outlined text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span></a>
+</article>
+<!-- B2C Card 4 -->
+<article class="bg-surface-white border border-outline-variant/30 rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+</div>
+<span class="font-label-caps text-[12px] px-2 py-1 bg-surface-container-low text-secondary rounded">Lao động</span>
+</div>
+<h3 class="font-headline-md text-[20px] font-semibold text-primary-container mb-2 group-hover:text-tertiary-container transition-colors">Làm Gì Khi Bị Sa Thải Trái Luật? Cẩm Nang Bảo Vệ Quyền Lợi</h3>
+<p class="font-body-md text-secondary text-sm mb-4 flex-grow line-clamp-2">Quy trình khiếu nại, khởi kiện và yêu cầu bồi thường thiệt hại khi người sử dụng lao động chấm dứt hợp đồng sai quy định.</p>
+<a class="text-tertiary-container font-button text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="#">Đọc tiếp <span class="material-symbols-outlined text-[16px]" data-icon="arrow_right_alt">arrow_right_alt</span></a>
+</article>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- SideNavBar (Zalo Widget) -->
+<div class="bg-primary-container text-tertiary-fixed font-label-caps text-label-caps fixed bottom-6 right-6 rounded-full w-14 h-14 border-2 border-tertiary-container shadow-lg flex items-center justify-center z-50 hover:scale-110 hover:bg-hover-gold transition-transform group cursor-pointer">
+<span class="material-symbols-outlined text-3xl group-hover:text-primary-container transition-colors" data-icon="chat">chat</span>
+</div>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-black w-full grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-gutter py-section-padding-desktop max-w-container-max mx-auto text-on-primary-fixed">
+<!-- Brand/Copyright -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-tertiary-fixed">VLS</div>
+<p class="font-body-md text-body-md text-on-primary-container">
+                © 2026 Vietnam Legal Services. All rights reserved.
+            </p>
+</div>
+<!-- Links -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-caps text-label-caps text-white mb-2">Lawyer network</h4>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Join our network</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Partner Directory</a>
+</div>
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-caps text-label-caps text-white mb-2">Services</h4>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Corporate Legal</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Litigation</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Consulting</a>
+</div>
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-caps text-label-caps text-white mb-2">Discovery &amp; Contact</h4>
+<a class="font-body-md text-body-md text-tertiary-fixed hover:text-tertiary-fixed-dim transition-colors" href="#">Knowledge Hub</a>
+<a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="#">Contact &amp; Social</a>
+</div>
+</footer>
+<!-- Simple Scroll Reveal Script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body></html>
