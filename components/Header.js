@@ -52,7 +52,7 @@ class SiteHeader extends HTMLElement {
             <li><a class="block py-2 hover:text-tertiary-container" href="/">Trang chủ</a></li>
             <li><a class="block py-2 hover:text-tertiary-container" href="/ve-chung-toi/">Về chúng tôi</a></li>
             <li><a class="block py-2 hover:text-tertiary-container" href="/dich-vu/phap-che-doanh-nghiep/">Pháp chế Doanh nghiệp</a></li>
-            <li><a class="block py-2 hover:text-tertiary-container" href="/dich-vu/tranh-chap-to-tung/">Tranh chấp Tố tụng</a></li>
+            <li><a class="block py-2 hover:text-tertiary-container" href="/dich-vu/tranh-chap-to-tung/">Tranh chấp - Tố tụng</a></li>
             <li><a class="block py-2 hover:text-tertiary-container" href="/blog/">Kiến thức Pháp lý</a></li>
           </ul>
         </div>
@@ -82,7 +82,7 @@ class SiteHeader extends HTMLElement {
     const menuBtn = this.querySelector('#mobile-menu-btn');
     const mobileMenu = this.querySelector('#mobile-menu');
     const closeBtn = this.querySelector('#close-menu-btn');
-    
+
     if (menuBtn && mobileMenu && closeBtn) {
       menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
       closeBtn.addEventListener('click', () => mobileMenu.classList.add('hidden'));
