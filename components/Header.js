@@ -27,15 +27,15 @@ class SiteHeader extends HTMLElement {
 
           <!-- Bottom Row: Desktop Navigation Menu & Action Button -->
           <div class="hidden md:flex justify-between items-center pt-2 mt-1 border-t border-outline-variant/20">
-            <ul class="flex items-center gap-6 lg:gap-8 whitespace-nowrap">
-              <li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-200 py-1 inline-block" href="/">Trang chủ</a></li>
-              <li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-200 py-1 inline-block" href="/ve-chung-toi/">Về chúng tôi</a></li>
-              <li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-200 py-1 inline-block" href="/dich-vu/phap-che-doanh-nghiep/">Pháp chế Doanh nghiệp</a></li>
-              <li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-200 py-1 inline-block" href="/dich-vu/tranh-chap-to-tung/">Tranh chấp Tố tụng</a></li>
-              <li><a class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed-variant hover:text-tertiary-container transition-colors hover:text-hover-gold duration-200 py-1 inline-block" href="/blog/">Kiến thức Pháp lý</a></li>
+            <ul class="flex items-center gap-1.5 lg:gap-2 bg-surface-container-low/90 p-1.5 rounded-xl border border-outline-variant/25 whitespace-nowrap">
+              <li><a class="nav-tab text-sm font-semibold text-secondary hover:text-primary-container px-4 py-2 rounded-lg transition-all duration-200 inline-block hover:bg-surface-white" href="/">Trang chủ</a></li>
+              <li><a class="nav-tab text-sm font-semibold text-secondary hover:text-primary-container px-4 py-2 rounded-lg transition-all duration-200 inline-block hover:bg-surface-white" href="/ve-chung-toi/">Về chúng tôi</a></li>
+              <li><a class="nav-tab text-sm font-semibold text-secondary hover:text-primary-container px-4 py-2 rounded-lg transition-all duration-200 inline-block hover:bg-surface-white" href="/dich-vu/phap-che-doanh-nghiep/">Pháp chế Doanh nghiệp</a></li>
+              <li><a class="nav-tab text-sm font-semibold text-secondary hover:text-primary-container px-4 py-2 rounded-lg transition-all duration-200 inline-block hover:bg-surface-white" href="/dich-vu/tranh-chap-to-tung/">Tranh chấp - Tố tụng</a></li>
+              <li><a class="nav-tab text-sm font-semibold text-secondary hover:text-primary-container px-4 py-2 rounded-lg transition-all duration-200 inline-block hover:bg-surface-white" href="/blog/">Kiến thức Pháp lý</a></li>
             </ul>
 
-            <a href="/lien-he/" class="inline-flex items-center justify-center bg-tertiary-container text-primary-container font-button text-sm rounded-md px-5 py-2 hover:bg-hover-gold transition-all whitespace-nowrap shadow-sm hover:shadow">
+            <a href="/lien-he/" class="inline-flex items-center justify-center bg-tertiary-container text-primary-container font-button text-sm rounded-lg px-6 py-2.5 hover:bg-hover-gold transition-all whitespace-nowrap shadow-sm hover:shadow font-semibold">
               Tư vấn ngay
             </a>
           </div>
@@ -70,12 +70,12 @@ class SiteHeader extends HTMLElement {
 
     // Active link highlighting logic
     const currentPath = window.location.pathname;
-    const links = this.querySelectorAll('ul a');
+    const links = this.querySelectorAll('.nav-tab');
     links.forEach(link => {
       const href = link.getAttribute('href');
       if (currentPath === href || (href !== '/' && currentPath.startsWith(href))) {
-        link.classList.remove('text-on-surface', 'dark:text-on-primary-fixed-variant');
-        link.classList.add('text-tertiary-container', 'font-bold', 'border-b-2', 'border-tertiary-container');
+        link.classList.remove('text-secondary');
+        link.classList.add('bg-surface-white', 'text-tertiary-container', 'font-bold', 'shadow-xs');
       }
     });
 

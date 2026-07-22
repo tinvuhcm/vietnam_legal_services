@@ -12,7 +12,8 @@ class SiteFooter extends HTMLElement {
               Vietnam Legal Services
             </div>
             <p class="font-body-md text-body-md text-on-primary-container max-w-md">
-              Đối tác pháp lý tin cậy của bạn. Nơi cung cấp tập trung các giải pháp an toàn và hiệu quả cho mọi vấn đề pháp lý.
+              Đối tác Pháp Lý tin cậy của bạn.<br>
+              Nơi cung cấp tập trung các giải pháp an toàn và hiệu quả cho mọi vấn đề về Pháp Lý.
             </p>
           </div>
           <div>
