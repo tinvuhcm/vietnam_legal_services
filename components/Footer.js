@@ -9,10 +9,10 @@ class SiteFooter extends HTMLElement {
         <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-gutter py-section-padding-desktop max-w-container-max mx-auto border-t border-surface-tint/30">
           <div class="col-span-1 md:col-span-2 space-y-4">
             <div class="font-headline-md text-headline-md text-tertiary-fixed font-bold">
-              VLS
+              Vietnam Legal Services
             </div>
             <p class="font-body-md text-body-md text-on-primary-container max-w-md">
-              Đối tác pháp lý tin cậy của bạn. Chúng tôi cung cấp các giải pháp an toàn, hiệu quả cho mọi vấn đề pháp lý.
+              Đối tác pháp lý tin cậy của bạn. Nơi cung cấp tập trung các giải pháp an toàn, hiệu quả cho mọi vấn đề pháp lý.
             </p>
           </div>
           <div>
