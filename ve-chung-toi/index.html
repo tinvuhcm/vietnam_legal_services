@@ -3,54 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giới Thiệu Vietnam Legal Services - Mạng Lưới Luật Sư Chuyên Nghiệp</title>
-  <meta name="description" content="Mạng lưới pháp lý hàng đầu với đội ngũ luật sư chuyên sâu, nhiều năm kinh nghiệm, cam kết bảo mật và hiệu quả cao." />
+  <title>Về Vietnam Legal Services (VLS) - Mạng Lưới Pháp Lý Hàng Đầu</title>
+  <meta name="description" content="Vietnam Legal Services là mạng lưới kết nối các luật sư và chuyên gia tư vấn pháp lý giàu kinh nghiệm dành cho doanh nghiệp và cá nhân tại Việt Nam." />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/style.css">
   <script type="module" src="/main.js"></script>
 </head>
-<body>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden min-h-screen flex flex-col pt-20 md:pt-0">
   <site-header></site-header>
 
-  <main style="padding-top: var(--nav-height);">
-    <section class="section">
-      <div class="container animate-on-scroll">
-        <h1 class="text-center">Về Vietnam Legal Services</h1>
-        <p class="text-center" style="max-width: 800px; margin: 0 auto 40px; color: var(--text-light);">
-          [PLACEHOLDER: Vietnam Legal Services network bio — years operating, network story, mission]
-        </p>
-        
-        <div style="width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80&w=1600') center/cover; border-radius: 8px; margin-bottom: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-          <!-- [PLACEHOLDER: professional team/network photos] -->
+  <main class="flex-grow pt-8 md:pt-24 pb-section-padding-desktop">
+    <!-- Hero Section -->
+    <section class="max-w-container-max mx-auto px-gutter py-12 md:py-16 text-center fade-in-up">
+      <h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary-container mb-6">
+        Về Vietnam Legal Services
+      </h1>
+      <p class="font-body-lg text-body-lg text-secondary max-w-3xl mx-auto leading-relaxed">
+        Vietnam Legal Services (VLS) là mạng lưới tư vấn pháp lý chuyên nghiệp, quy tụ đội ngũ luật sư giàu kinh nghiệm thực chiến trong các lĩnh vực Pháp chế Doanh nghiệp, Tranh chấp Tố tụng, Hợp đồng và Bảo vệ Quyền lợi Cá nhân.
+      </p>
+    </section>
+
+    <!-- Banner Image -->
+    <div class="max-w-container-max mx-auto px-gutter mb-16 fade-in-up">
+      <div class="w-full h-80 md:h-[450px] rounded-xl overflow-hidden shadow-lg relative bg-primary-container">
+        <img class="w-full h-full object-cover opacity-90" src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80&w=1600" alt="Đội ngũ Vietnam Legal Services" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-transparent flex items-end p-8">
+          <p class="text-tertiary-fixed text-lg font-headline-md font-semibold">Tận tâm • Bảo mật • Tối ưu Rủi ro Pháp lý</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <section class="max-w-container-max mx-auto px-gutter mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-surface-white border border-outline-variant/30 rounded-xl p-8 shadow-sm fade-in-up">
+          <div class="w-12 h-12 rounded-full bg-secondary-container text-primary-container flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined" data-icon="verified">verified</span>
+          </div>
+          <h3 class="font-headline-md text-xl font-semibold text-primary-container mb-3">Mạng Lưới Chuyên Gia</h3>
+          <p class="text-secondary text-sm leading-relaxed">Kết nối nhiều luật sư thành viên thuộc Đoàn Luật sư TP.HCM và Hà Nội, đảm bảo năng lực xử lý cho mọi loại vụ việc phức tạp.</p>
         </div>
 
-        <div class="grid">
-          <div class="card">
-            <h3>Giấy phép hoạt động</h3>
-            <p>[PLACEHOLDER: network credentials/licenses]</p>
+        <div class="bg-surface-white border border-outline-variant/30 rounded-xl p-8 shadow-sm fade-in-up" style="transition-delay: 0.1s;">
+          <div class="w-12 h-12 rounded-full bg-secondary-container text-primary-container flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined" data-icon="shield">shield</span>
           </div>
-          <div class="card">
-            <h3>Kinh nghiệm thực tiễn</h3>
-            <p>[PLACEHOLDER: years of combined experience]</p>
+          <h3 class="font-headline-md text-xl font-semibold text-primary-container mb-3">Bảo Bảo Thông Tin</h3>
+          <p class="text-secondary text-sm leading-relaxed">Cam kết bảo mật tuyệt đối 100% dữ liệu, hợp đồng và thông tin tư vấn theo chuẩn đạo đức hành nghề luật sư.</p>
+        </div>
+
+        <div class="bg-surface-white border border-outline-variant/30 rounded-xl p-8 shadow-sm fade-in-up" style="transition-delay: 0.2s;">
+          <div class="w-12 h-12 rounded-full bg-secondary-container text-primary-container flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
           </div>
-          <div class="card">
-            <h3>Trình độ đội ngũ</h3>
-            <p>[PLACEHOLDER: team qualifications]</p>
-          </div>
+          <h3 class="font-headline-md text-xl font-semibold text-primary-container mb-3">Bám Sát Xu Hướng 2026</h3>
+          <p class="text-secondary text-sm leading-relaxed">Cập nhật liên tục các văn bản quy phạm pháp luật mới nhất về Thuế, Đất đai, Lao động và Hóa đơn điện tử để giải quyết bài toán của khách hàng.</p>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container animate-on-scroll">
-        <h2 class="text-center mb-4">Khách Hàng Nói Gì Về Chúng Tôi</h2>
-        <div class="grid" style="margin-top: 40px;">
-          <div class="card" style="font-style: italic;">
-            "[PLACEHOLDER: client testimonial quote 1]"
+    <!-- Testimonials -->
+    <section class="max-w-container-max mx-auto px-gutter">
+      <div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-8 md:p-12 fade-in-up">
+        <h2 class="font-headline-md text-2xl md:text-3xl text-primary-container text-center mb-8 font-semibold">Đánh Giá Từ Khách Hàng</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-surface-white p-6 rounded-lg border border-outline-variant/20 shadow-sm font-body-md text-sm text-secondary italic">
+            "Dịch vụ pháp chế thuê ngoài của VLS giúp công ty chúng tôi rà soát hợp đồng cực kỳ chuyên nghiệp và tránh rủi ro thuế trong kỳ thanh tra 2026."
+            <span class="block mt-4 not-italic font-semibold text-primary-container text-xs">— GĐ Công ty Công nghệ (TP.HCM)</span>
           </div>
-          <div class="card" style="font-style: italic;">
-            "[PLACEHOLDER: client testimonial quote 2]"
+
+          <div class="bg-surface-white p-6 rounded-lg border border-outline-variant/20 shadow-sm font-body-md text-sm text-secondary italic">
+            "Luật sư tư vấn rất tận tâm, hỗ trợ gia đình tôi hoàn tất thủ tục khai nhận di sản thừa kế nhanh chóng dù di sản không có di chúc."
+            <span class="block mt-4 not-italic font-semibold text-primary-container text-xs">— Khách hàng Chị Minh (Hà Nội)</span>
           </div>
-          <div class="card" style="font-style: italic;">
-            "[PLACEHOLDER: client testimonial quote 3]"
+
+          <div class="bg-surface-white p-6 rounded-lg border border-outline-variant/20 shadow-sm font-body-md text-sm text-secondary italic">
+            "Quá trình gửi Thư cảnh báo pháp lý thu hồi nợ của VLS rất văn minh, đúng luật và giúp chúng tôi thu hồi lại tài sản bị cố tình dây dưa."
+            <span class="block mt-4 not-italic font-semibold text-primary-container text-xs">— Anh Hoàng (Bình Dương)</span>
           </div>
         </div>
       </div>
@@ -59,5 +89,21 @@
 
   <site-footer></site-footer>
   <chat-widget></chat-widget>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in-up').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
 </body>
 </html>

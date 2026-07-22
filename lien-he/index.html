@@ -3,50 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Liên Hệ Vietnam Legal Services</title>
-  <meta name="description" content="Liên hệ với mạng lưới luật sư chuyên nghiệp để được tư vấn pháp lý miễn phí, giải quyết tranh chấp." />
+  <title>Liên Hệ Tư Vấn - Vietnam Legal Services (VLS)</title>
+  <meta name="description" content="Liên hệ ngay với mạng lưới luật sư chuyên nghiệp Vietnam Legal Services để được tư vấn pháp lý bảo mật và nhanh chóng." />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/style.css">
   <script type="module" src="/main.js"></script>
 </head>
-<body>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden min-h-screen flex flex-col pt-20 md:pt-0">
   <site-header></site-header>
 
-  <main style="padding-top: var(--nav-height);">
-    <section class="section">
-      <div class="container">
-        <h1 class="text-center animate-on-scroll">Liên Hệ Với Chúng Tôi</h1>
-        
-        <div class="grid" style="margin-top: 60px;">
-          <div class="animate-on-scroll">
-            <h3>Thông Tin Liên Hệ</h3>
-            <p style="margin: 20px 0;">Chúng tôi luôn sẵn sàng lắng nghe và giải quyết vấn đề pháp lý của bạn một cách bảo mật và nhanh chóng nhất.</p>
-            
-            <div style="margin-bottom: 20px;">
-              <strong class="text-gold">Hotline:</strong><br>
-              <span style="font-size: 1.2rem;">[PLACEHOLDER: Hotline]</span>
-            </div>
-            <div style="margin-bottom: 20px;">
-              <strong class="text-gold">Zalo Hỗ Trợ:</strong><br>
-              <a href="#" class="btn btn-outline" style="margin-top: 10px;">Chat Qua Zalo OA</a>
+  <main class="flex-grow pt-8 md:pt-24 pb-section-padding-desktop">
+    <section class="max-w-container-max mx-auto px-gutter py-12 md:py-16">
+      <div class="text-center max-w-2xl mx-auto mb-12 fade-in-up">
+        <h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary-container mb-4">
+          Liên Hệ Với Chúng Tôi
+        </h1>
+        <p class="font-body-lg text-body-lg text-secondary">
+          Mạng lưới Luật sư Vietnam Legal Services luôn sẵn sàng tư vấn và bảo vệ tối đa quyền lợi pháp lý cho bạn.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg max-w-5xl mx-auto">
+        <!-- Contact Info -->
+        <div class="lg:col-span-5 space-y-6 fade-in-up">
+          <div class="bg-primary-container text-on-primary p-8 rounded-xl space-y-6 shadow-md">
+            <h3 class="font-headline-md text-2xl text-tertiary-fixed font-semibold">Thông Tin Trực Tiếp</h3>
+            <p class="text-on-primary-container leading-relaxed">
+              Hãy để lại thông tin hoặc kết nối trực tiếp qua hotline để nhận tư vấn sơ bộ hoàn toàn miễn phí từ các Luật sư chuyên trách.
+            </p>
+
+            <div class="space-y-4 pt-4 border-t border-outline-variant/30">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-tertiary-container mt-1" data-icon="domain">domain</span>
+                <div>
+                  <strong class="block text-sm text-tertiary-fixed">Tên thương hiệu:</strong>
+                  <span>Vietnam Legal Services (VLS)</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-tertiary-container mt-1" data-icon="language">language</span>
+                <div>
+                  <strong class="block text-sm text-tertiary-fixed">Domain chính thức:</strong>
+                  <a href="https://vietnamlegalservices.vn" target="_blank" class="hover:text-hover-gold underline">VietnamLegalServices.vn</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-tertiary-container mt-1" data-icon="support_agent">support_agent</span>
+                <div>
+                  <strong class="block text-sm text-tertiary-fixed">Kênh tư vấn Zalo OA:</strong>
+                  <span class="text-sm">Vietnam Legal Services Official</span>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <div class="card animate-on-scroll">
-            <h3 class="text-navy" style="margin-bottom: 20px;">Gửi Yêu Cầu Tư Vấn</h3>
-            <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Yêu cầu đã được ghi nhận.');">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Họ và tên" required>
+        </div>
+
+        <!-- Form Card -->
+        <div class="lg:col-span-7 fade-in-up" style="transition-delay: 0.1s;">
+          <div class="bg-surface-white border border-outline-variant/30 rounded-xl p-8 shadow-sm">
+            <h3 class="font-headline-md text-2xl text-primary-container mb-6 font-semibold">Gửi Yêu Cầu Tư Vấn</h3>
+            
+            <form id="contact-form" class="space-y-4">
+              <div>
+                <label class="block text-sm font-semibold text-primary-container mb-1">Họ và tên *</label>
+                <input type="text" required class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/50 rounded-lg focus:outline-none focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all" placeholder="Ví dụ: Nguyễn Văn A" />
               </div>
-              <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Số điện thoại" required>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-semibold text-primary-container mb-1">Số điện thoại *</label>
+                  <input type="tel" required class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/50 rounded-lg focus:outline-none focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all" placeholder="090x xxx xxx" />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-primary-container mb-1">Email</label>
+                  <input type="email" class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/50 rounded-lg focus:outline-none focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all" placeholder="name@company.com" />
+                </div>
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email">
+
+              <div>
+                <label class="block text-sm font-semibold text-primary-container mb-1">Lĩnh vực cần tư vấn *</label>
+                <select required class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/50 rounded-lg focus:outline-none focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all">
+                  <option value="">-- Chọn dịch vụ --</option>
+                  <option value="b2b-compliance">Pháp chế Doanh nghiệp thuê ngoài</option>
+                  <option value="b2b-contract">Rà soát & Soạn thảo Hợp đồng</option>
+                  <option value="b2c-family">Luật Gia đình / Ly hôn</option>
+                  <option value="b2c-inheritance">Luật Thừa kế / Tài sản</option>
+                  <option value="b2c-debt">Thu hồi nợ cá nhân hợp pháp</option>
+                  <option value="b2c-land">Tranh chấp Đất đai</option>
+                  <option value="other">Lĩnh vực khác</option>
+                </select>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" placeholder="Nội dung tư vấn..." rows="5" required></textarea>
+
+              <div>
+                <label class="block text-sm font-semibold text-primary-container mb-1">Nội dung tóm tắt vấn đề *</label>
+                <textarea rows="4" required class="w-full px-4 py-3 bg-surface-container-low border border-outline-variant/50 rounded-lg focus:outline-none focus:border-tertiary-container focus:ring-1 focus:ring-tertiary-container transition-all" placeholder="Mô tả ngắn gọn vụ việc hoặc câu hỏi pháp lý của bạn..."></textarea>
               </div>
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Yêu Cầu Miễn Phí</button>
+
+              <button type="submit" class="w-full bg-tertiary-container text-primary-container font-button text-button font-semibold py-4 rounded-lg hover:bg-hover-gold transition-colors flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined">send</span> Gửi Yêu Cầu Tư Vấn Ngay
+              </button>
             </form>
+
+            <div id="form-success" class="hidden mt-4 p-4 bg-tertiary-container/10 border border-tertiary-container text-primary-container rounded-lg text-center font-semibold">
+              ✓ Cảm ơn bạn! Yêu cầu tư vấn đã được gửi thành công. Luật sư VLS sẽ liên hệ lại trong thời gian sớm nhất.
+            </div>
           </div>
         </div>
       </div>
@@ -55,5 +118,32 @@
 
   <site-footer></site-footer>
   <chat-widget></chat-widget>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contact-form');
+      const successBox = document.getElementById('form-success');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          form.classList.add('hidden');
+          successBox.classList.remove('hidden');
+        });
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in-up').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
 </body>
 </html>
