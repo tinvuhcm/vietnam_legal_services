@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Typography & Alignment */
+p {
+    text-align: justify;
+}
+
 .fade-in-up {
     opacity: 0;
     transform: translateY(20px);
