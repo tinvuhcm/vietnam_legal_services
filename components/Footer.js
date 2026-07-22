@@ -12,16 +12,16 @@ class SiteFooter extends HTMLElement {
               Vietnam Legal Services
             </div>
             <p class="font-body-md text-body-md text-on-primary-container max-w-md">
-              Đối tác pháp lý tin cậy của bạn. Nơi cung cấp tập trung các giải pháp an toàn, hiệu quả cho mọi vấn đề pháp lý.
+              Đối tác pháp lý tin cậy của bạn. Nơi cung cấp tập trung các giải pháp an toàn và hiệu quả cho mọi vấn đề pháp lý.
             </p>
           </div>
           <div>
             <h4 class="font-label-caps text-label-caps text-tertiary-fixed mb-4">Liên kết</h4>
             <ul class="space-y-2">
               <li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="/ve-chung-toi/">Về chúng tôi</a></li>
-              <li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="/dich-vu/phap-che-doanh-nghiep/">Pháp chế doanh nghiệp</a></li>
-              <li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="/dich-vu/tranh-chap-to-tung/">Tranh chấp tố tụng</a></li>
-              <li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="/blog/">Kiến thức pháp lý</a></li>
+              <li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="/dich-vu/phap-che-doanh-nghiep/">Pháp chế Doanh nghiệp</a></li>
+              <li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="/dich-vu/tranh-chap-to-tung/">Tranh chấp - Tố tụng</a></li>
+              <li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:text-tertiary-fixed-dim transition-colors" href="/blog/">Kiến thức Pháp lý</a></li>
             </ul>
           </div>
           <div>
@@ -29,11 +29,11 @@ class SiteFooter extends HTMLElement {
             <ul class="space-y-2">
               <li class="font-body-md text-body-md text-on-primary-container flex items-start gap-2">
                 <span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span>
-                Hà Nội, Việt Nam
+                Thành phố Hồ Chí Minh, Việt Nam
               </li>
               <li class="font-body-md text-body-md text-on-primary-container flex items-center gap-2">
                 <span class="material-symbols-outlined text-[18px]" data-icon="mail">mail</span>
-                contact@vls.vn
+                contact@vietnamlegalservices.vn
               </li>
               <li class="font-body-md text-body-md text-on-primary-container flex items-center gap-2">
                 <span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
