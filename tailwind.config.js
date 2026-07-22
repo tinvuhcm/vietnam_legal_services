@@ -2,7 +2,12 @@
 export default {
   content: [
     "./index.html",
-    "./**/*.{js,ts,jsx,tsx,html}",
+    "./components/**/*.js",
+    "./dich-vu/**/*.html",
+    "./blog/**/*.html",
+    "./lien-he/**/*.html",
+    "./ve-chung-toi/**/*.html",
+    "./src/**/*.{js,ts,html}",
   ],
   darkMode: "class",
   theme: {
